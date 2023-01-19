@@ -1,7 +1,11 @@
 - create:
   - ~/.config
 
-- clean: ['~']
+- clean:
+    ~/:
+      force: true
+    ~/.config:
+      recursive: true
   
 - link:
     ~/.config/nvim:
@@ -11,6 +15,10 @@
     ~/.config/zellij:
         create: true
         path: zellij
+
+    ~/.config/omf:
+        create: false
+        path: omf
 
 - shell:
   - 
