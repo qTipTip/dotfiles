@@ -23,3 +23,13 @@
     stdin: true
     stdout: true
     description: Change default shell to fish 
+  -
+    command: curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+    stdin: false
+    stdout: true
+    description: Download oh-my-fish and run the installer
+  -
+    command: omf install https://github.com/jhillyerd/plugin-git
+    stdin: false
+    stdout: true
+    description: Install the fish git-plugin
