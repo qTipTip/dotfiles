@@ -1,0 +1,10 @@
+- create:
+  - ~/.config
+
+- clean: ['~']
+  
+- link:
+    ~/.config/nvim:
+        force: true
+        path: nvim
+
