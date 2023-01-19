@@ -8,3 +8,6 @@
         force: true
         path: nvim
 
+    ~/.config/zellij:
+        create: true
+        path: zellij
