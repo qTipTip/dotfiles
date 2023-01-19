@@ -11,3 +11,15 @@
     ~/.config/zellij:
         create: true
         path: zellij
+
+- shell:
+  - 
+    command: sudo apt install fish
+    stdin: true
+    stdout: true
+    description: Install the fish-shell
+  - 
+    command: chsh -s $(which fish)
+    stdin: true
+    stdout: true
+    description: Change default shell to fish 
