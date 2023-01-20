@@ -16,15 +16,21 @@ require('keybindings')
 require("lazy").setup(
 	{
 		"shaunsingh/nord.nvim",
-		"nvim-treesitter/nvim-treesitter"
+		"nvim-treesitter/nvim-treesitter",
+		"nvim-tree/nvim-web-devicons",
+		"romgrk/barbar.nvim",
+		"neovim/nvim-lspconfig",
+		{'ms-jpq/coq_nvim', branch = 'coq'},
+		{'ms-jpq/coq.artifacts', branch = 'artifacts'}
+
 	}, 
 	{}
 )
 
 require('colorscheme')
 require('nvim-treesitter.configs').setup{
-	ensure_installed = {'vim', 'lua', 'python', 'help'},
+	ensure_installed = {'vim', 'lua', 'python', 'help', 'markdown'},
 	highlight = { enable = true },
 	incremental_selection = { enable = true },
-	textobjects = { enable = true }
+	textobjects = { enable = true },
 }

@@ -8,6 +8,10 @@
       recursive: true
   
 - link:
+    ~/.config/fish:
+        force: true
+        path: fish
+
     ~/.config/nvim:
         force: true
         path: nvim

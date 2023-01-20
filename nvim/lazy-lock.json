@@ -1,5 +1,10 @@
 {
+  "barbar.nvim": { "branch": "master", "commit": "c1b5d351ccd8f88fd2729b90ade2ef5d333463de" },
+  "coq.artifacts": { "branch": "artifacts", "commit": "e8fedcb9fbedc60c8d0f30accdd72b53e998d8af" },
+  "coq_nvim": { "branch": "coq", "commit": "929adacab097dd2c36c797c8f9323886b4439a9c" },
   "lazy.nvim": { "branch": "main", "commit": "4739c2d95af17acb786ed33445f59b7b13671417" },
   "nord.nvim": { "branch": "master", "commit": "418e2507dcff84a7cb993ae4f37697b98e0c92ca" },
-  "nvim-treesitter": { "branch": "master", "commit": "42c3a3c51e8fef027655e7facd293aae7c6984bb" }
+  "nvim-lspconfig": { "branch": "master", "commit": "d228bcf7cd94611929482a09e114a42c41fe81a8" },
+  "nvim-treesitter": { "branch": "master", "commit": "42c3a3c51e8fef027655e7facd293aae7c6984bb" },
+  "nvim-web-devicons": { "branch": "master", "commit": "6c38926351372ea87034dec26182b62c835ff3bc" }
 }
