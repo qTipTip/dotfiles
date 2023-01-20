@@ -1,4 +1,5 @@
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
     "git",
@@ -14,10 +15,16 @@ vim.opt.rtp:prepend(lazypath)
 require('keybindings')
 require("lazy").setup(
 	{
-		"arcticicestudio/nord-vim",
+		"shaunsingh/nord.nvim",
 		"nvim-treesitter/nvim-treesitter"
 	}, 
 	{}
 )
 
 require('colorscheme')
+require('nvim-treesitter.configs').setup{
+	ensure_installed = {'vim', 'lua', 'python', 'help'},
+	highlight = { enable = true },
+	incremental_selection = { enable = true },
+	textobjects = { enable = true }
+}
