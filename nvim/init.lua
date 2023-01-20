@@ -34,3 +34,11 @@ require('nvim-treesitter.configs').setup{
 	incremental_selection = { enable = true },
 	textobjects = { enable = true },
 }
+
+vim.lsp.start({
+	name = "pylsp",
+	cmd = {"pylsp"},
+	root_dir = vim.fs.dirname(vim.fs.find({'setup.py', 'pyproject.toml'}, { upward = true })[1]),
+})
+
+require'lspconfig'.pylsp.setup{}
