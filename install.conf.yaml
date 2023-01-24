@@ -26,7 +26,12 @@
 
 - shell:
   - 
-    command: sudo apt install fish
+    command: |
+      if [ "$(uname -s)" = "Linux" ]; then
+            sudo ap install fish
+      else
+            brew install fish
+      fi
     stdin: true
     stdout: true
     description: Install the fish-shell
@@ -46,7 +51,12 @@
     stdout: true
     description: Install the fish git-plugin
   -
-    command: git clone https://github.com/arcticicestudio/nord-gnome-terminal.git && cd nord-gnome-terminal/src && ./nord.sh && cd .. && rm -r nord-gnome-terminal/
+    command: |
+       if [ "$(uname -s)" = "Linux" ]; then
+         git clone https://github.com/arcticicestudio/nord-gnome-terminal.git && cd nord-gnome-terminal/src && ./nord.sh && cd .. && rm -r nord-gnome-terminal/
+       else
+         curl https://raw.githubusercontent.com/arcticicestudio/nord-iterm2/develop/src/xml/Nord.itermcolors > Nord.itermcolors
+       fi
     stdin: false
     stdout: true
     description: Clone nord-gnome-terminal, execute, then remove folder
@@ -55,4 +65,3 @@
     stdin: true
     stdout: true
     description: Install powerline compatible fonts. Remember to select it in the terminal! 
-
