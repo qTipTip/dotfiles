@@ -32,6 +32,7 @@ require("lazy").setup(
 		}
 	},
     "windwp/nvim-autopairs",
+    "nvim-tree/nvim-tree.lua"
 }, 
 {}
 )
