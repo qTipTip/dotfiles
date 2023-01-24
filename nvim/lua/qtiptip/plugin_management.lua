@@ -2,7 +2,7 @@ require("lazy").setup(
 {
 	"shaunsingh/nord.nvim",
 	"nvim-treesitter/nvim-treesitter",
-	"nvim-treesitter/playground", 
+	"nvim-treesitter/playground",
 	"nvim-tree/nvim-web-devicons",
 	"neovim/nvim-lspconfig",
 	"nvim-lua/plenary.nvim",
@@ -32,7 +32,10 @@ require("lazy").setup(
 		}
 	},
     "windwp/nvim-autopairs",
-    "nvim-tree/nvim-tree.lua"
-}, 
+    "nvim-tree/nvim-tree.lua",
+    "ellisonleao/glow.nvim",
+    "RRethy/vim-illuminate",
+    "lukas-reineke/lsp-format.nvim"
+},
 {}
 )
