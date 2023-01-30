@@ -56,7 +56,10 @@
     stdout: true
     description: Install the fish git-plugin
   -
-    command: sudo apt install fonts-powerline
+    command: |
+      if [ "$(uname -s)" = "Linux" ]; then
+        sudo apt install fonts-powerline
+      fi
     stdin: true
     stdout: true
     description: Install powerline compatible fonts. Remember to select it in the terminal! 
