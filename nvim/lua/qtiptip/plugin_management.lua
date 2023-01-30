@@ -42,7 +42,8 @@ require("lazy").setup(
             vim.o.timeout = true
             vim.o.timeoutlen = 300
         end
-        }
+        },
+        "navarasu/onedark.nvim",
     },
     {}
 )
