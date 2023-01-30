@@ -21,3 +21,6 @@ vim.opt.colorcolumn = "80"
 vim.opt.signcolumn = "yes"
 vim.opt.guicursor = ""
 vim.opt.cursorline = true
+
+vim.opt.list = true
+vim.opt.listchars = "trail:·"
