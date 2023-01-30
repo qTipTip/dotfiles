@@ -17,7 +17,7 @@ vim.cmd [[
         autocmd!
         autocmd VimEnter * hi link illuminatedWord CursorLine
     augroup END
-    
+
     augroup illuminate_augroup
         autocmd!
         autocmd VimEnter * hi illuminatedWord cterm=underline gui=underline
