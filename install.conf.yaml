@@ -25,6 +25,11 @@
         path: omf
 
 - shell:
+  - command: |
+      curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+    stdin: true
+    stdout: true
+    description: Install the kitty-terminal
   - 
     command: |
       if [ "$(uname -s)" = "Linux" ]; then
@@ -50,16 +55,6 @@
     stdin: false
     stdout: true
     description: Install the fish git-plugin
-  -
-    command: |
-       if [ "$(uname -s)" = "Linux" ]; then
-         git clone https://github.com/arcticicestudio/nord-gnome-terminal.git && cd nord-gnome-terminal/src && ./nord.sh && cd .. && rm -r nord-gnome-terminal/
-       else
-         curl https://raw.githubusercontent.com/arcticicestudio/nord-iterm2/develop/src/xml/Nord.itermcolors > Nord.itermcolors
-       fi
-    stdin: false
-    stdout: true
-    description: Clone nord-gnome-terminal, execute, then remove folder
   -
     command: sudo apt install fonts-powerline
     stdin: true
