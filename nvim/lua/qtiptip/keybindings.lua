@@ -21,3 +21,10 @@ vim.keymap.set("n", "J", "mzJ`z")
 vim.keymap.set("n", "<leader>y", "\"+y")
 vim.keymap.set("v", "<leader>y", "\"+y")
 vim.keymap.set("v", "<leader>Y", "\"+Y")
+
+-- edit nvimrc
+-- edit dotfiles
+vim.keymap.set("n", "<leader>erc", ":tabedit ~/.config/nvim/init.lua <cr>")
+-- vim.keymap.set("n", "<leader>edf", function ()
+    
+-- end)

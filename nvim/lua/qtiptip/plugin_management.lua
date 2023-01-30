@@ -1,14 +1,17 @@
 require("lazy").setup(
     {
+        "tpope/vim-commentary",
+        "tpope/vim-surround",
+        "tpope/vim-fugitive",
+        "tpope/vim-unimpaired",
+        "navarasu/onedark.nvim",
         "shaunsingh/nord.nvim",
         "nvim-treesitter/nvim-treesitter",
         "nvim-treesitter/playground",
         "nvim-tree/nvim-web-devicons",
         "neovim/nvim-lspconfig",
         "nvim-lua/plenary.nvim",
-        { 'nvim-telescope/telescope.nvim', branch = "0.1.x", dependencies = { "nvim-lua/plenary.nvim" } },
         "mbbill/undotree",
-        "tpope/vim-fugitive",
         {
             'VonHeikemen/lsp-zero.nvim',
             branch = 'v1.x',
@@ -43,7 +46,7 @@ require("lazy").setup(
             vim.o.timeoutlen = 300
         end
         },
-        "navarasu/onedark.nvim",
+        { 'nvim-telescope/telescope.nvim', branch = "0.1.x", dependencies = { "nvim-lua/plenary.nvim" } },
     },
     {}
 )
