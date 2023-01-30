@@ -1,4 +1,5 @@
 require("lazy").setup({
+    "feline-nvim/feline.nvim",
     "folke/neodev.nvim",
     "tpope/vim-commentary",
     "tpope/vim-surround",
@@ -47,6 +48,5 @@ require("lazy").setup({
     end
     },
     { 'nvim-telescope/telescope.nvim', branch = "0.1.x", dependencies = { "nvim-lua/plenary.nvim" } },
-},
-    {}
+}, {}
 )
