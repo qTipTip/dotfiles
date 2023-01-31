@@ -18,5 +18,4 @@ vim.keymap.set("v", "<leader>Y", "\"+Y")
 -- edit dotfiles
 vim.keymap.set("n", "<leader>erc", ":edit ~/.config/nvim/init.lua <cr>")
 vim.keymap.set("n", "<leader>edf", ":edit ~/.dotfiles <cr>")
--- vim.keymap.set("n", "<leader>edf", function ()
 -- end)
