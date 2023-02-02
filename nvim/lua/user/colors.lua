@@ -1,1 +1,3 @@
-require('onedark').load()
+require('nightfox').setup()
+
+vim.cmd("colorscheme nightfox")
