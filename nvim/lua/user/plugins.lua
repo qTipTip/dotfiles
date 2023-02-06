@@ -6,6 +6,7 @@ require("lazy").setup({
     "tpope/vim-surround",
     "tpope/vim-fugitive",
     "nvim-treesitter/nvim-treesitter",
+    "nvim-tree/nvim-tree.lua",
     "nvim-tree/nvim-web-devicons",
     {
         'VonHeikemen/lsp-zero.nvim',
@@ -30,11 +31,8 @@ require("lazy").setup({
         }
     },
     "windwp/nvim-autopairs",
-    "nvim-tree/nvim-tree.lua",
-    "ellisonleao/glow.nvim",
     "RRethy/vim-illuminate",
     "lukas-reineke/lsp-format.nvim",
-    { "ldelossa/gh.nvim", dependencies = { "ldelossa/litee.nvim" } },
     { 'nvim-telescope/telescope.nvim', branch = "0.1.x", dependencies = { "nvim-lua/plenary.nvim" } },
 }, {}
 )

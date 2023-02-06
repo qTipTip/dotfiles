@@ -4,6 +4,20 @@ local lsp = require('lsp-zero')
 lsp.preset('recommended')
 lsp.ensure_installed({ 'pylsp', 'sumneko_lua' })
 
+
+lsp.configure('pylsp',
+    {
+        settings = {
+            pylsp = {
+                plugins = {
+                    pyls_black = { enabled = true },
+                    isort = { enabled = true, profile = "black" },
+                    rope_autoimport = { enabled = true }
+                },
+            },
+        },
+    }
+)
 lsp.on_attach(function(client, buffer_number)
     local opts = { buffer = buffer_number, remap = false }
 
