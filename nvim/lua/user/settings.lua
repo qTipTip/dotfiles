@@ -24,6 +24,8 @@ vim.opt.guicursor = ""
 vim.opt.cursorline = true
 
 vim.opt.list = true
-vim.opt.listchars = "trail:·"
-
+vim.opt.listchars = "tab:» ,trail:·,nbsp:+"
 vim.opt.termguicolors = true
+
+vim.opt.pumheight = 5
+vim.opt.pumblend = 5

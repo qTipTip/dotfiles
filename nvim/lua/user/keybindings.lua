@@ -1,5 +1,6 @@
 vim.g.mapleader = " "
 vim.keymap.set("i", "jk", "<esc>l", { silent = true })
+vim.keymap.set("t", "jk", [[<C-\><C-n>]], { silent = true })
 
 -- move visual selection
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")

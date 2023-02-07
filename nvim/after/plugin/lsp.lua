@@ -18,6 +18,7 @@ lsp.configure('pylsp',
         },
     }
 )
+
 lsp.on_attach(function(client, buffer_number)
     local opts = { buffer = buffer_number, remap = false }
 
@@ -28,8 +29,9 @@ lsp.on_attach(function(client, buffer_number)
             { scope = "buffer" }
         })
     end, opts)
-    vim.keymap.set("n", "[d", function() vim.diagnostic.goto_next() end, opts)
-    vim.keymap.set("n", "]d", function() vim.diagnostic.goto_prev() end, opts)
+    vim.keymap.set("n", "<leader>dn", function() vim.diagnostic.goto_next() end, opts)
+    vim.keymap.set("n", "<leader>dp", function() vim.diagnostic.goto_prev() end, opts)
+    vim.keymap.set("n", "<leader>dl", "<cmd>Telescope diagnostics<cr>", opts)
     vim.keymap.set("n", "<leader>ca", function() vim.lsp.buf.code_action() end, opts)
     vim.keymap.set("n", "<leader>rf", function() vim.lsp.buf.references() end, opts)
     vim.keymap.set("n", "<leader>rn", function() vim.lsp.buf.rename() end, opts)
