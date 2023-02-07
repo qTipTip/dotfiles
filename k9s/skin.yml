@@ -1,4 +1,6 @@
-# Based on K9s Solarized Dark Skin Contributed by [@danmikita](danmikita@gmail.com)
+# K9s Nightfox Theme
+# Based on the Nightfox.nvim color scheme:
+# https://github.com/EdenEast/nightfox.nvim
 foreground: &foreground "#cdcecf"
 background: &background "#192330"
 current_line: &current_line "#2b3b51"
