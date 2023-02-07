@@ -27,6 +27,10 @@
         create: true
         path: kitty
         force: true
+    ~/.config/k9s:
+        create: true
+        path: k9s
+        force: true
 
 - shell:
   - command: |
