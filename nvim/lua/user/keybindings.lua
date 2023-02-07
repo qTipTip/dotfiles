@@ -18,4 +18,10 @@ vim.keymap.set("v", "<leader>Y", "\"+Y")
 -- edit dotfiles
 vim.keymap.set("n", "<leader>erc", ":edit ~/.config/nvim/init.lua <cr>")
 vim.keymap.set("n", "<leader>edf", ":edit ~/.dotfiles <cr>")
--- end)
+
+-- open urls with netrw disabled (when using nvim-tree)
+if vim.fn.has("mac") == 1 then
+    vim.keymap.set("n", "gx", '<Cmd>call jobstart(["open", expand("<cfile>")], {"detach": v:true})<CR>')
+elseif vim.fn.has("unix") == 1 then
+    vim.keymap.set("n", "gx", '<Cmd>call jobstart(["xdg-open", expand("<cfile>")], {"detach": v:true})<CR>', {})
+end
