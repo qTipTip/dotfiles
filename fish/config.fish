@@ -45,3 +45,7 @@ switch (uname)
 	case Darwin
 		source (brew --prefix asdf)/asdf.fish
 end
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/ivar/google-cloud-sdk/path.fish.inc' ]; . '/Users/ivar/google-cloud-sdk/path.fish.inc'; end
+source (brew --prefix asdf)/asdf.fish
