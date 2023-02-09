@@ -11,15 +11,12 @@
     ~/.config/fish:
         force: true
         path: fish
-
     ~/.config/nvim:
         force: true
         path: nvim
-
     ~/.config/zellij:
         create: true
         path: zellij
-
     ~/.config/omf:
         create: false
         path: omf
@@ -30,6 +27,14 @@
     ~/.config/k9s:
         create: true
         path: k9s
+        force: true
+    ~/.config/yabai:
+        create: true
+        path: yabai
+        force: true
+    ~/.config/spacebar:
+        create: true
+        path: spacebar
         force: true
 
 - shell:

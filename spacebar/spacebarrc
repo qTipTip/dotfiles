@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+# Various icons
+spacebar -m config display all
+spacebar -m config power on
+spacebar -m config clock on
+spacebar -m config spaces on
+spacebar -m config space_icon_strip I II III IV V VI VII IX
+
+# Fonts
+spacebar -m config icon_font "Hack Nerd Font Mono:Bold:15.0"
+spacebar -m config text_font "Hack Nerd Font Mono:Bold:15.0"
+# Nightfox colors
+spacebar -m config background_color 0xff192330
+spacebar -m config foreground_color 0xffcdcecf
+spacebar -m config power_icon_color 0xff81b29a

@@ -1,0 +1,45 @@
+#!/usr/bin/env sh
+
+# make sure focus follows mouse 
+yabai -m config mouse_follows_focus off
+yabai -m config focus_follows_mouse autofocus
+
+# layout strategy, binary space partition
+# make sure we spawn to the right/bottom
+yabai -m config layout bsp
+yabai -m config window_placement second_child
+
+# padding settings
+yabai -m config bottom_padding 40
+yabai -m config left_padding 40
+yabai -m config right_padding 40
+yabai -m config top_padding 20
+yabai -m config window_gap 20
+
+# mouse setup
+yabai -m config mouse_modifier alt
+yabai -m config mouse_action1 move
+yabai -m config mouse_action2 resize
+
+# window shadows/opacity
+# floating windows always on top
+yabai -m config window_topmost on 
+yabai -m config window_shadow float
+yabai -m config window_opacity on
+yabai -m config active_window_opacity 1.0
+yabai -m config normal_window_opacity 0.9
+
+# osx named application/window rules
+yabai -m rule --add app='^System Information$' manage=off
+yabai -m rule --add app='^System Preferences$' manage=off
+yabai -m rule --add title='Preferences$' manage=off
+
+# disable window animations
+# not sure if this actually works
+defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
+defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
+
+# make yabai and spacebar play nice
+yabai -m config external_bar all:"$(spacebar -m config height)":0
+
+echo "Loaded yabai config"
