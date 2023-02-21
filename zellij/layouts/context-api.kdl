@@ -1,0 +1,5 @@
+layout {
+    pane command="poetry" {
+        args "run pytest"
+    }
+}

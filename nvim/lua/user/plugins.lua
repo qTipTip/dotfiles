@@ -1,5 +1,5 @@
 require("lazy").setup({
-    "EdenEast/nightfox.nvim",
+    { "catppuccin/nvim",               name = "catppuccin" },
     "feline-nvim/feline.nvim",
     "folke/neodev.nvim",
     "tpope/vim-commentary",
@@ -33,12 +33,12 @@ require("lazy").setup({
     "windwp/nvim-autopairs",
     "RRethy/vim-illuminate",
     "lukas-reineke/lsp-format.nvim",
-    { 'nvim-telescope/telescope.nvim', branch = "0.1.x",                      dependencies = { "nvim-lua/plenary.nvim" } },
+    { 'nvim-telescope/telescope.nvim', branch = "0.1.x",   dependencies = { "nvim-lua/plenary.nvim" } },
     'gbrlsnchs/telescope-lsp-handlers.nvim',
     'lewis6991/gitsigns.nvim',
     'folke/trouble.nvim',
     'mfussenegger/nvim-dap',
-    { 'mfussenegger/nvim-dap-python',  dependencies = 'mfussenegger/nvim-dap' },
-    { 'rcarriga/nvim-dap-ui',          dependencies = 'mfussenegger/nvim-dap' }
+    { 'mfussenegger/nvim-dap-python', dependencies = 'mfussenegger/nvim-dap' },
+    { 'rcarriga/nvim-dap-ui',         dependencies = 'mfussenegger/nvim-dap' }
 }, {}
 )

@@ -1,3 +1,3 @@
-require('nightfox').setup()
+require('catppuccin').setup()
 
-vim.cmd("colorscheme nightfox")
+vim.cmd("colorscheme catppuccin-mocha")

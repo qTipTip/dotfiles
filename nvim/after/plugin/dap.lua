@@ -1,7 +1,7 @@
 local dap = require('dap')
 local dap_ui = require('dapui')
 dap_ui.setup()
-require('dap-python').setup('/home/ivar/.cache/pypoetry/virtualenvs/debugpy-venv-KAiYoZUg-py3.11/bin/python')
+require('dap-python').setup('/usr/bin/python3')
 
 vim.keymap.set('n', "<leader>tb", dap.toggle_breakpoint)
 vim.keymap.set('n', '<leader>db', dap_ui.toggle)
