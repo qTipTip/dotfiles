@@ -36,6 +36,9 @@
         create: true
         path: spacebar
         force: true
+    ~/.config/skhd:
+        create: true
+        path: skhd
 
 - shell:
   - command: |
