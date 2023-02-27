@@ -39,6 +39,8 @@ require("lazy").setup({
     'folke/trouble.nvim',
     'mfussenegger/nvim-dap',
     { 'mfussenegger/nvim-dap-python', dependencies = 'mfussenegger/nvim-dap' },
-    { 'rcarriga/nvim-dap-ui',         dependencies = 'mfussenegger/nvim-dap' }
+    { 'rcarriga/nvim-dap-ui',         dependencies = 'mfussenegger/nvim-dap' },
+    { 'renerocksai/telekasten.nvim' },
+    { 'lukas-reineke/headlines.nvim', dependencies = 'nvim-treesitter/nvim-treesitter' },
 }, {}
 )
