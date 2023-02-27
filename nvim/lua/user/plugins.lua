@@ -40,7 +40,26 @@ require("lazy").setup({
     'mfussenegger/nvim-dap',
     { 'mfussenegger/nvim-dap-python', dependencies = 'mfussenegger/nvim-dap' },
     { 'rcarriga/nvim-dap-ui',         dependencies = 'mfussenegger/nvim-dap' },
-    { 'renerocksai/telekasten.nvim' },
     { 'lukas-reineke/headlines.nvim', dependencies = 'nvim-treesitter/nvim-treesitter' },
+    {
+        "nvim-neorg/neorg",
+        build = ":Neorg sync-parsers",
+        opts = {
+            load = {
+                ["core.defaults"] = {}, -- Loads default behaviour
+                ["core.norg.concealer"] = {}, -- Adds pretty icons to your documents
+                ["core.norg.dirman"] = { -- Manages Neorg workspaces
+                    config = {
+                        workspaces = {
+                            work = "~/notes/work",
+                            home = "~/notes/home"
+                        },
+                        default_workspace = "work"
+                    },
+                },
+            },
+        },
+        dependencies = { { "nvim-lua/plenary.nvim" } },
+    }
 }, {}
 )
