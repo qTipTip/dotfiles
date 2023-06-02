@@ -37,7 +37,7 @@ lsp.on_attach(function(client, buffer_number)
     vim.keymap.set("n", "<leader>ca", function() vim.lsp.buf.code_action() end, opts)
     vim.keymap.set("n", "<leader>rf", function() vim.lsp.buf.references() end, opts)
     vim.keymap.set("n", "<leader>rn", function() vim.lsp.buf.rename() end, opts)
-    vim.keymap.set("i", "<c-p>", function() vim.lsp.buf.signature_help() end, opts)
+    vim.keymap.set("i", "<A-p>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
 lsp.setup()
