@@ -41,10 +41,6 @@ require("lazy").setup({
     { 'mfussenegger/nvim-dap-python', dependencies = 'mfussenegger/nvim-dap' },
     { 'rcarriga/nvim-dap-ui',         dependencies = 'mfussenegger/nvim-dap' },
     { 'lukas-reineke/headlines.nvim', dependencies = 'nvim-treesitter/nvim-treesitter' },
-    {
-        "nvim-neorg/neorg",
-        build = ":Neorg sync-parsers",
-        dependencies = { { "nvim-lua/plenary.nvim" } },
-    }
+    { "stevearc/dressing.nvim" },
 }, {}
 )

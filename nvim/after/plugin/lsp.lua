@@ -2,7 +2,7 @@ require('neodev').setup({})
 local lsp = require('lsp-zero')
 
 lsp.preset('recommended')
-lsp.ensure_installed({ 'pylsp', 'sumneko_lua' })
+lsp.ensure_installed({ 'pylsp'})
 
 
 lsp.configure('pylsp',

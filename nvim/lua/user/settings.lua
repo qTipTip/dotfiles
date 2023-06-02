@@ -30,4 +30,6 @@ vim.opt.termguicolors = true
 vim.opt.pumheight = 5
 vim.opt.pumblend = 5
 
-vim.opt.autochdir = true
+
+-- This breaks plugins!
+-- vim.opt.autochdir = true
