@@ -36,9 +36,6 @@ require("lazy").setup({
     'gbrlsnchs/telescope-lsp-handlers.nvim',
     'lewis6991/gitsigns.nvim',
     'folke/trouble.nvim',
-    'mfussenegger/nvim-dap',
-    { 'mfussenegger/nvim-dap-python', dependencies = 'mfussenegger/nvim-dap' },
-    { 'rcarriga/nvim-dap-ui',         dependencies = 'mfussenegger/nvim-dap' },
     { 'lukas-reineke/headlines.nvim', dependencies = 'nvim-treesitter/nvim-treesitter' },
     { "stevearc/dressing.nvim" },
 }, {}
