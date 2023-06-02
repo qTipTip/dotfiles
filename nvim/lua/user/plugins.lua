@@ -31,7 +31,6 @@ require("lazy").setup({
         }
     },
     "windwp/nvim-autopairs",
-    "RRethy/vim-illuminate",
     "lukas-reineke/lsp-format.nvim",
     { 'nvim-telescope/telescope.nvim', branch = "0.1.x",   dependencies = { "nvim-lua/plenary.nvim" } },
     'gbrlsnchs/telescope-lsp-handlers.nvim',
