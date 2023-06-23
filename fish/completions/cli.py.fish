@@ -1,0 +1,1 @@
+complete --command cli.py --no-files --arguments "(env _CLI.PY_COMPLETE=complete_fish _TYPER_COMPLETE_FISH_ACTION=get-args _TYPER_COMPLETE_ARGS=(commandline -cp) cli.py)" --condition "env _CLI.PY_COMPLETE=complete_fish _TYPER_COMPLETE_FISH_ACTION=is-args _TYPER_COMPLETE_ARGS=(commandline -cp) cli.py"

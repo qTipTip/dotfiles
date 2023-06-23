@@ -5,7 +5,7 @@ require("lazy").setup({
     "tpope/vim-commentary",
     "tpope/vim-surround",
     "tpope/vim-fugitive",
-    "nvim-treesitter/nvim-treesitter",
+    {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
     "nvim-tree/nvim-tree.lua",
     "nvim-tree/nvim-web-devicons",
     {
