@@ -35,7 +35,7 @@ require("lazy").setup({
     { 'nvim-telescope/telescope.nvim', branch = "0.1.x",   dependencies = { "nvim-lua/plenary.nvim" } },
     'gbrlsnchs/telescope-lsp-handlers.nvim',
     'lewis6991/gitsigns.nvim',
-    { 'lukas-reineke/headlines.nvim', dependencies = 'nvim-treesitter/nvim-treesitter' },
     { "stevearc/dressing.nvim" },
+    { "github/copilot.vim"}
 }, {}
 )
