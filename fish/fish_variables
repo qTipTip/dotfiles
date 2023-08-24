@@ -158,9 +158,10 @@ SETUVAR _fish_abbr_gwtpr:git\x20worktree\x20prune
 SETUVAR _fish_abbr_gwtrm:git\x20worktree\x20remove
 SETUVAR _fish_abbr_gwtulo:git\x20worktree\x20unlock
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
-SETUVAR _fisher_nakulj_2F_auto_2D_venv_files:\x7e/\x2econfig/fish/conf\x2ed/venv\x2efish
-SETUVAR _fisher_plugins:jorgebucaran/fisher\x1enakulj/auto\x2dvenv
+SETUVAR _fisher_plugins:jorgebucaran/fisher
 SETUVAR _fisher_upgraded_to_4_4:\x1d
+SETUVAR _hydro_git_42166:update\x2dreadme\u2022\x20
+SETUVAR _hydro_git_46219:main\u2022\x20
 SETUVAR fish_color_autosuggestion:555
 SETUVAR fish_color_cancel:\x2d\x2dreverse
 SETUVAR fish_color_command:blue
