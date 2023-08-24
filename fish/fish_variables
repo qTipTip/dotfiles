@@ -161,7 +161,7 @@ SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fish
 SETUVAR _fisher_plugins:jorgebucaran/fisher
 SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR _hydro_git_42166:update\x2dreadme\u2022\x20
-SETUVAR _hydro_git_46219:main\u2022\x20\u21911\x20\u21931\x20
+SETUVAR _hydro_git_46219:main\u2022\x20\u21912\x20\u21931\x20
 SETUVAR fish_color_autosuggestion:555
 SETUVAR fish_color_cancel:\x2d\x2dreverse
 SETUVAR fish_color_command:blue
