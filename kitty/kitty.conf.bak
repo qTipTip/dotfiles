@@ -1,9 +1,11 @@
 # BEGIN_KITTY_THEME
+# Gruvbox Dark
 include current-theme.conf
 # END_KITTY_THEME
 
 font_size 15
-adjust_line_height 100%
+font_family Fira Code Regular Nerd Font
+adjust_line_height 175%
 
 cursor_blink_interval 0
 window_padding_width 10
