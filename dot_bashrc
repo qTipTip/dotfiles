@@ -117,7 +117,10 @@ if ! shopt -oq posix; then
 fi
 
 export PATH="~/bin:$PATH"
-export PATH="~/.asdf/bin:$PATH"
+export PATH="~/.asdf/shims:~/.asdf/bin:$PATH"
+
+export EDITOR="nvim"
+export VISUAL="nvim"
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
